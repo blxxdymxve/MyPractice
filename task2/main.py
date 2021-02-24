@@ -12,10 +12,6 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_Form):
 
     def calculator(self):
         textBoxValue = self.lineEdit.text()
-        """if int(textBoxValue) % 400 == 0 or int(textBoxValue) % 4 == 0:
-            self.label_2.setText("Год является високосным")
-        else:
-            self.label_2.setText("Год не является високосным")"""
 
         if int(textBoxValue) % 4 == 0:
             if int(textBoxValue) % 100 and int(textBoxValue) % 400:
