@@ -1,6 +1,7 @@
 import shutil
 total, used, free = shutil.disk_usage("/")
 if ((free // (2**30)) * 1024 > 1):
+    print("Места на диске много")
     i = 0
     while i < 10000:
         file = open('test.txt', 'a')
