@@ -31,5 +31,4 @@ with open('coordinates.txt', 'r', encoding='utf8') as f:
     c = Point(int(c[0]), int(c[2]))
     d = Point(int(d[0]), int(d[2]))
     ABC = Hexagon(a, b, c, d)
-
-print(ABC.perimeter)
+print("Периметр многоугольника равен:", ABC.perimeter)
